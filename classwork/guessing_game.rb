@@ -52,5 +52,3 @@ end
 
 guessing_game = GuessingGame.new
 guessing_game.play
-
-
