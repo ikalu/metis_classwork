@@ -19,14 +19,12 @@ class GuessingGame
   def round_number
     @round += 1
     puts "Round #{@round}: Play!!!"
-
   end
 
   def play
-   round_number
+    round_number
 
     3.times do
-
       if make_guess == @answer
         @wins += 1
         puts "Correct!"
@@ -35,8 +33,8 @@ class GuessingGame
         @loses += 1
         puts "Incorrect!"
       end
-
     end
+
     @num_of_rounds += 1
     print_result
 
