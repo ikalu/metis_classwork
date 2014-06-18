@@ -1,24 +1,37 @@
 class NameLottery
   attr_accessor :names
 
-  def participants
-
+  def initialize(names)
+    @names = names
   end
 
   def list
-    arr = []
-    loop do
-      names = gets.chomp
-      if names != " "
-        arr << names
-      else
-        break
-      end
-    break
+    names = []
+    while true
+      print "> "
+      name = gets.chomp
+      break if name.empty?
+
+      names << name
     end
-    print arr
   end
+
+  def play
+    list
+    shuffled = names.shuffle
+    select = rand(0..(shuffled.size - 1))
+
+    winner
+    puts select
+  end
+
+  def winner
+    puts "The winner ... "
+    print "> "
+  end
+
 end
 
-namelottery = NameLottery.new
-namelottery.list
+names = []
+lottery = NameLottery.new(names)
+lottery.play
