@@ -6,7 +6,6 @@ class NameLottery
   end
 
   def list
-    @names = []
     while true
       print "> "
       name = gets.chomp
@@ -29,9 +28,8 @@ class NameLottery
     puts "The winner ... "
     print "> "
   end
-
 end
 
-names = []
-lottery = NameLottery.new(names)
+lotto = []
+lottery = NameLottery.new(lotto)
 lottery.play
