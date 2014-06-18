@@ -6,7 +6,7 @@ class NameLottery
   end
 
   def list
-    names = []
+    @names = []
     while true
       print "> "
       name = gets.chomp
@@ -22,7 +22,7 @@ class NameLottery
     select = rand(0..(shuffled.size - 1))
 
     winner
-    puts select
+    puts shuffled[select]
   end
 
   def winner
