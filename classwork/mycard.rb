@@ -81,10 +81,18 @@ class CardGame
 
 end
 
-jpcards = []
-jpcards << MyCard.new({front: "anh", back: "Man"})
-ibcards = []
-ibcards << MyCard.new({front: "Nne", back: "Woman"})
-my_decks = [Deck.new("Japanese Deck", jpcards), Deck.new("Igbo Deck", ibcards)]
-cardgame = CardGame.new(my_decks)
-cardgame.play
+class Decks
+
+end
+
+#jpcards = []
+#jpcards << MyCard.new({front: "anh", back: "Man"})
+#ibcards = []
+#ibcards << MyCard.new({front: "Nne", back: "Woman"})
+#my_decks = [Deck.new("Japanese Deck", jpcards), Deck.new("Igbo Deck", ibcards)]
+#cardgame = CardGame.new(my_decks)
+#cardgame.play
+
+
+
+
