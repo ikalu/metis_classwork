@@ -1,0 +1,16 @@
+<h3> Edit this gallery </h3>
+
+    <%= form_for(@gallery) do |form| %>
+
+      Name: <%= form.text_field :name %> <br />
+
+      <div>
+        <%= form.label :description %>
+        <%= form.text_area :description %>
+      </div>
+
+      <%= form.submit "Update" %>
+
+    <% end %>
+
+
